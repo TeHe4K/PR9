@@ -7,6 +7,25 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
-        
+        <Grid Margin="0,0,547,0">
+            <Image Source="Images\WarNoArmor.png" Margin="10,25,-1,217" />
+            <Label Content="Воин без доспехов" HorizontalAlignment="Center" Margin="0,251,0,0" VerticalAlignment="Top" Width="233"/>
+            <Label Content="Здоровье: " x:Name="NoShield" HorizontalAlignment="Left" Margin="10,277,0,0" VerticalAlignment="Top" Width="115"/>
+            <Button Content="Удар" Click="NoArmor" HorizontalAlignment="Center" Margin="0,308,0,0" VerticalAlignment="Top" Width="233" Height="29"/>
+        </Grid>
+
+        <Grid Margin="274,0,274,0">
+            <Image Source="Images\WarLightArmor.png" Margin="10,25,-1,217" />
+            <Label Content="Воин с легкими доспехами" HorizontalAlignment="Center" Margin="0,251,0,0" VerticalAlignment="Top" Width="233"/>
+            <Label Content="Здоровье: " x:Name="lightShield" HorizontalAlignment="Left" Margin="10,277,0,0" VerticalAlignment="Top" Width="115"/>
+            <Button Content="Удар" Click="LightArmor" HorizontalAlignment="Center" Margin="0,308,0,0" VerticalAlignment="Top" Width="233" Height="29"/>
+        </Grid>
+
+        <Grid Margin="548,0,0,0">
+            <Image Source="Images\WarHeavyArmor.png" Margin="10,25,-1,217" />
+            <Label Content="Воин тяжелыми" HorizontalAlignment="Center" Margin="0,251,0,0" VerticalAlignment="Top" Width="233"/>
+            <Label Content="Здоровье: " x:Name="HeavyShield" HorizontalAlignment="Left" Margin="10,277,0,0" VerticalAlignment="Top" Width="115"/>
+            <Button Content="Удар" Click="HeavyArmor" HorizontalAlignment="Center" Margin="0,308,0,0" VerticalAlignment="Top" Width="233" Height="29"/>
+        </Grid>
     </Grid>
 </Window>
