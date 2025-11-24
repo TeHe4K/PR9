@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace PR9.Classes
 {
-    public class WarsHeavyArmor: Wars
+    internal class WarsHeavyArmor: Wars
     {
         public double Armor { get; set; }
         public WarsHeavyArmor(double Health, double Armor) : base(Health)
@@ -15,7 +15,7 @@ namespace PR9.Classes
             this.Armor = Armor;
         }
 
-        public void damage(int Damage)
+        public override void damage(double Damage)
         {
             double actualDamage = Damage * (1 - Armor);
             Health -= actualDamage;
